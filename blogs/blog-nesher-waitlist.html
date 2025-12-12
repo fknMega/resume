@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nesher.io יצא ל-waitlist | בלוג</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="page-blog-post animate-in">
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="../index.html" data-transition>
+        <span class="dot"></span>
+        <span>Yaniv Perez</span>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="../index.html" data-transition>ראשי</a>
+        <a class="nav-link" href="../about.html" data-transition>אודות</a>
+        <a class="nav-link active" href="../blog.html" data-transition>בלוג</a>
+        <a class="nav-link" href="../contact.html" data-transition>צור קשר</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="reveal">
+        <div class="badge">בלוג</div>
+        <h1 class="section-heading">Nesher.io יצא ל-waitlist</h1>
+        <p class="muted">Bun + Elasticsearch + MongoDB, פתיחה מדורגת והקשחה נגד שימוש זדוני.</p>
+        <div class="blog-tags">
+          <span class="tag">Nesher.io</span>
+          <span class="tag">Waitlist</span>
+          <span class="tag">Search</span>
+        </div>
+      </section>
+
+      <section style="margin-top: 24px;">
+        <article class="card blog-card">
+          <div class="markdown-body">
+            <h2>Stack</h2>
+            <p><strong>Stack:</strong> Bun · Elasticsearch · MongoDB</p>
+            <p>שחררתי את Nesher.io ל-waitlist כדי לשמור על קצב איכותי ולהקשיח את המערכת מול שימוש זדוני.</p>
+            <ul>
+              <li>Elasticsearch כ-DB לחיפוש: אינדוקסים יעודיים לביצועים נמוכים מ-100ms.</li>
+              <li>MongoDB למטא-דאטה של דליפות ומשתמשים: הפרדה ברורה בין חיפוש לנתוני הרשאות.</li>
+              <li>Bun לשרת API מהיר וקליל עם footprint מינימלי.</li>
+              <li>חומות אש, rate limiting וחסימת מדינות עוינות כבר בשכבת הקצה.</li>
+            </ul>
+            <pre><code class="language-bash"># חימום אינדקסים אחרי דיפלוי
+curl -XPOST https://api.nesher.io/admin/warm-indexes \\
+  -H "Authorization: Bearer $TOKEN"</code></pre>
+            <blockquote>ל-waitlist הצטרפו 894 קרדיטים ראשונים; פותחים גישה מדורגת עם ניטור צמוד.</blockquote>
+            <p>המשך ייעול ותרשימי זרימה מלאים יפורסמו עם פתיחת הדלת הראשית.</p>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div>בלוג טכני עם פוסטים ב-HTML מלא.</div>
+  </footer>
+
+  <script src="../assets/main.js"></script>
+</body>
+</html>
